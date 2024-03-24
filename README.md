@@ -10,7 +10,7 @@ En esta pagina haremos un CRUD de recetas y la mostraremos en la pagina inicio. 
 
 ## deploy
 
-[trabajo-practico-backend-6](https://trabajo-practico-backend-2.netlify.app)
+[trabajo-practico-backend-6](https://trabajo-practico-backend-6.netlify.app)
 
 ## Repositorio
 
