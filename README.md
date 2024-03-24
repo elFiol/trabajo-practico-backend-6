@@ -1,17 +1,16 @@
 # Pagina de recetas.
 
-En esta pagina haremos un CRUD de recetas y la mostraremos en la pagina inicio. para ello vamos a utilizar la libreria [json server](https://github.com/typicode/json-server).
-
-**¡ATENCION!**
-
-este proyecto todavia solo funciona en desarrollo.
+En esta pagina haremos un CRUD de recetas y la mostraremos en la pagina inicio. para ello vamos a utilizar el backend de [Recetas](https://trabajo-practico-backend-5.vercel.app)
 
 ## Librerias
 - react-bootstrap
 - icon-bootstrap
 - react-hook-form
 - SweetAler2
-- json-server
+
+## deploy
+
+[trabajo-practico-backend-6](https://trabajo-practico-backend-2.netlify.app)
 
 ## Repositorio
 
