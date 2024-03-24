@@ -4,7 +4,7 @@ const URL_RECETAS = import.meta.env.VITE_API_RECETAS;
 
 export const leerRecetasAPI = async () => {
   try {
-    const respuesta = await fetch(URL_RECETAS);
+    const respuesta = await fetch(`${URL_RECETAS}/api/recetas`);
     const recetas = await respuesta.json();
     return recetas;
   } catch (error) {
@@ -16,7 +16,7 @@ export const leerRecetasAPI = async () => {
 
 export const obtenerRecetaAPI = async (id) => {
   try {
-    const respuesta = await fetch(URL_RECETAS + "/" + id);
+    const respuesta = await fetch(URL_RECETAS + "/api/receta/" + id);
     return respuesta;
   } catch (error) {
     console.log(error);
@@ -26,7 +26,7 @@ export const obtenerRecetaAPI = async (id) => {
 
 export const editarRecetaAPI = async (recetaModificado, id) => {
   try {
-    const respuesta = await fetch(`${URL_RECETAS}/${id}`, {
+    const respuesta = await fetch(`${URL_RECETAS}/api/receta/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export const editarRecetaAPI = async (recetaModificado, id) => {
 
 export const CrearProductoAPI = async (recetaNuevo) => {
   try {
-    const respuesta = await fetch(URL_RECETAS, {
+    const respuesta = await fetch(`${URL_RECETAS}/api/recetas`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -60,7 +60,7 @@ export const CrearProductoAPI = async (recetaNuevo) => {
 
 export const borrarRecetaAPI = async (id) => {
   try {
-    const respuesta = await fetch(`${URL_RECETAS}/${id}`, {
+    const respuesta = await fetch(`${URL_RECETAS}/api/receta/${id}`, {
       method: "DELETE",
     });
     return respuesta;

@@ -12,10 +12,10 @@ const ItemRecetas = ({receta}) => {
         <img src={receta.imagen} alt={receta.titulo} className="img-fluid w-100"/>
       </td>
       <td>
-        <Button variant="danger" type="button" onClick={()=>borrarRecetaAPI(receta.id)}>
+        <Button variant="danger" type="button" onClick={()=>borrarRecetaAPI(receta._id)}>
           <i className="bi bi-trash"></i>
         </Button>
-        <Link className="btn btn-warning" to={"/administrador/editarRecetas/" + receta.id}>
+        <Link className="btn btn-warning" to={"/administrador/editarRecetas/" + receta._id}>
           <i className="bi bi-pencil-square"></i>
         </Link>
       </td>
