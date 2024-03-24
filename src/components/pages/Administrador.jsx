@@ -9,8 +9,12 @@ const Administrador = () => {
 
   useEffect(() => {
     const consultaAPI = async () => {
+      try{
       const resultado = await leerRecetasAPI();
       setRecetas(resultado);
+      }catch(error){
+        console.log(error)
+      }
     };
     consultaAPI();
   }, [recetas]);
